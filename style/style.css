@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css2?family=Amiri&family=Zen+Kurenaido&display=swap");
+:root {
+  --checkbox-size: 100px;
+  --bg-color: #ffa69e;
+  --checkbox-color: #ffffff;
+  --hover-color: #ff686b;
+  --tick-color: #84dcc6;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 20px;
+}
+
+body {
+  background-image: url(./background.png);
+}
+
+header {
+  background-image: url(./move.gif);
+  opacity: 0.8;
+  display: flex;
+  height: 70px;
+  margin-bottom: 2rem;
+}
+
+.nav {
+  font-family: "Courier New", Courier, monospace;
+  color: #ec4899;
+  font-size: 1.5rem;
+  height: 30px;
+  background-image: linear-gradient(to bottom, #ec4899, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 2rem;
+  margin-top: 1.6rem;
+}
+
+.nav:hover {
+  background-image: linear-gradient(to bottom, #ffffff, #aaaaaa);
+  font-weight: bold;
+}
+
+#filter-input {
+background-color: #3d3d3d;
+border-radius: 2rem;
+border: none;
+color: #aaaaaa;
+font-size: 1.5rem;
+padding: 0.5rem;
+margin: 0.5rem ;
+font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+#filter-input:focus{
+outline:none;
+}
+
+
+@media screen and (max-width: 1024px) {
+  image img.bg {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  color: #ec4899;
+  font-size: 3.5rem;
+  background-image: linear-gradient(to bottom, #ec4899, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 0.5rem;
+}
+input.check {
+  height: 20px;
+  width: 20px;
+  position: relative;
+}
+
+input.check:after {
+  content: "\00D7";
+  display: block;
+  background: white;
+  background-image: url("https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-21-32.png");
+  pointer-events: none;
+  font-size: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  color: transparent;
+  transition: 0.25s all ease-in-out;
+  border-radius: 3px;
+  line-height: 15px;
+  background-position: 0 15px;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+input.check:checked:after {
+  background-color: green;
+  background-position: 0 0;
+}
+input.check:hover:after {
+  border-color: greenyellow;
+}
+
+.NewTask {
+  flex: 1 1 0%;
+  background-color: #3d3d3d;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  color: #aaaaaa;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+.NewTask::placeholder {
+  color: #aaaaaa;
+}
+.NewTask:focus {
+  outline: none;
+}
+
+#add-todo-item {
+  margin-left: 1rem;
+  color: #845ec2;
+  font-size: 2em;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  cursor: pointer;
+  transition: 0.4s;
+  border: none;
+}
+
+#add-todo-item:hover {
+  color: #6d0788;
+  font-size: 2.15rem;
+}
+
+.container {
+  display: flex 2 1 0%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  flex: 1 1 0%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+main h2 {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #3d3d3d;
+  margin-bottom: 1rem;
+}
+
+.task-list {
+  padding: 1rem;
+}
+ul {
+  list-style-type: none;
+}
+
+li {
+  color: #c2c3c5;
+  border: 1px solid #c2c3c5;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: flex 1 1 1;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+li input {
+  margin-right: 1rem;
+}
+
+li i {
+  margin-left: 1rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+li i:hover {
+  color: red;
+}
+
+li .todo-item-done + label {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+li .todo-item-done:checked + label {
+  text-decoration: line-through;
+  color: green;
+}
+
+body.arabic {
+  font-family: "Amiri", serif;
+}
+label [lang="ar"] {
+  font-family: "Amiri", serif;
+}
