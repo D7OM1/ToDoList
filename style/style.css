@@ -1,13 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Nunito");
 @import url("https://fonts.googleapis.com/css2?family=Amiri&family=Zen+Kurenaido&display=swap");
-:root {
-  --checkbox-size: 100px;
-  --bg-color: #ffa69e;
-  --checkbox-color: #ffffff;
-  --hover-color: #ff686b;
-  --tick-color: #84dcc6;
-}
 
 * {
   margin: 0;
