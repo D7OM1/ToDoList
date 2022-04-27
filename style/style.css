@@ -119,6 +119,18 @@ input.check:hover:after {
   margin: 0 auto;
   font-size: 1.25rem;
 }
+.NewTask::-webkit-input-placeholder {
+  color: #aaaaaa;
+}
+.NewTask::-moz-placeholder {
+  color: #aaaaaa;
+}
+.NewTask:-ms-input-placeholder {
+  color: #aaaaaa;
+}
+.NewTask::-ms-input-placeholder {
+  color: #aaaaaa;
+}
 .NewTask::placeholder {
   color: #aaaaaa;
 }
@@ -211,9 +223,4 @@ li .todo-item-done:checked + label {
   color: green;
 }
 
-body.arabic {
-  font-family: "Amiri", serif;
-}
-label [lang="ar"] {
-  font-family: "Amiri", serif;
-}
+
