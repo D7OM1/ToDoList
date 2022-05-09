@@ -223,4 +223,7 @@ li .todo-item-done:checked + label {
   color: green;
 }
 
+input[type="button"] {
+border: none;
+}
 
